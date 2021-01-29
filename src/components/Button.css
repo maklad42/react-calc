@@ -22,5 +22,5 @@
 
 .Button:hover {
   background: #d7ddd3;
-  cursor: deafult;
+  cursor: pointer;
 }
