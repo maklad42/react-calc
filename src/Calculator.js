@@ -7,7 +7,7 @@ import './Calculator.css';
 export default class Calculator extends Component {
   constructor() {
     super();
-    this.state = { data: '' };
+    this.state = { data: '', first: null, second: null, op: '' };
   }
 
   calculate = () => {
@@ -39,27 +39,29 @@ export default class Calculator extends Component {
       <div className="Calculator">
         <Display data={this.state.data} />
         <Keypad>
-          <Button label="C" value="clr" />
-          <Button label="7" value="7" />
-          <Button label="4" value="4" />
-          <Button label="1" value="1" />
-          <Button label="0" value="0" />
+          <Button className="altkey" label="C" value="clr" />
+          <Button className="numkey" label="7" value="7" />
+          <Button className="numkey" label="4" value="4" />
+          <Button className="numkey" label="1" value="1" />
+          <Button className="numkey" label="0" value="0" />
 
-          <Button label="/" value="/" />
-          <Button label="8" value="8" />
-          <Button label="5" value="5" />
-          <Button label="2" value="2" />
-          <Button label="." value="." />
+          <Button className="altkey" label="+/-" value="neg" />
+          <Button className="numkey" label="8" value="8" />
+          <Button className="numkey" label="5" value="5" />
+          <Button className="numkey" label="2" value="2" />
+          <Button className="nokey" label="" value="null" />
 
-          <Button label="x" value="*" />
-          <Button label="9" value="9" />
-          <Button label="6" value="6" />
-          <Button label="3" value="3" />
-          <Button label="" value="null" />
+          <Button className="altkey" label="%" value="per" />
+          <Button className="numkey" label="9" value="9" />
+          <Button className="numkey" label="6" value="6" />
+          <Button className="numkey" label="3" value="3" />
+          <Button className="altkey" label="." value="." />
 
-          <Button label="-" value="-" />
-          <Button label="+" size="2" value="+" />
-          <Button label="=" size="2" value="eql" />
+          <Button className="opkey" label="/" value="/" />
+          <Button className="opkey" label="x" value="*" />
+          <Button className="opkey" label="-" value="-" />
+          <Button className="opkey" label="+" value="+" />
+          <Button className="eqlkey" label="=" value="eql" />
         </Keypad>
       </div>
     );

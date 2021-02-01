@@ -12,8 +12,20 @@
   min-width: 25%;
 }
 
+.Button.numkey {
+  color: red;
+}
+
+.Button.altkey {
+  color: green;
+}
+
+.Button.opkey {
+  color: blue;
+}
+
 .Button[data-size='2'] {
-  height: 40%;
+  width: 50%;
 }
 
 .Button[data-value-"null"] {
