@@ -10,6 +10,7 @@
   color: rgba(0, 0, 0, 0, 5);
   height: 20%;
   min-width: 25%;
+  user-select: none;
 }
 
 .Button.numkey {
@@ -24,11 +25,7 @@
   color: blue;
 }
 
-.Button[data-size='2'] {
-  width: 50%;
-}
-
-.Button[data-value-"null"] {
+.Button[data-value='null'] {
   pointer-events: none;
 }
 
