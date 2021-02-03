@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Keypad.css';
+import './Keypad.scss';
 
 export default class Keypad extends Component {
   render() {

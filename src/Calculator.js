@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Button from './components/Button';
 import Keypad from './components/Keypad';
 import Display from './components/Display';
-import './Calculator.css';
+import './Calculator.scss';
 
 export default class Calculator extends Component {
   constructor() {
